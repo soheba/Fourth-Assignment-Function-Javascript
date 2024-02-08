@@ -1,23 +1,23 @@
 // //1st assignment
-// function calculateMoney(InAday) {
-//   if (InAday < 0) {
-//     return "invalid number";
-//   }
-//   const perTicketSell = 120;
-//   const perJenitorCost = 500;
-//   const totalStaff = 8;
-//   const lunchCostPerStaff = 50;
+function calculateMoney(InAday) {
+  if (InAday < 0) {
+    return "invalid number";
+  }
+  const perTicketSell = 120;
+  const perJenitorCost = 500;
+  const totalStaff = 8;
+  const lunchCostPerStaff = 50;
 
-//   const InADayCost = InAday * perTicketSell;
-//   const DailyStaffCost = totalStaff * lunchCostPerStaff;
-//   const totalDailyCost = perJenitorCost + DailyStaffCost;
-//   const moneyLeft = InADayCost - totalDailyCost;
+  const InADayCost = InAday * perTicketSell;
+  const DailyStaffCost = totalStaff * lunchCostPerStaff;
+  const totalDailyCost = perJenitorCost + DailyStaffCost;
+  const moneyLeft = InADayCost - totalDailyCost;
 
-//   return moneyLeft;
-// }
-// let InAday = -133;
-// const finalMoneyLeft = calculateMoney(InAday);
-// console.log("money left : ", finalMoneyLeft);
+  return moneyLeft;
+}
+let InAday = -133;
+const finalMoneyLeft = calculateMoney(InAday);
+console.log("money left : ", finalMoneyLeft);
 
 //2nd assignement
 
