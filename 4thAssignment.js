@@ -65,3 +65,5 @@ function deleteInvalids(array) {
 
 const array1 = [NaN, 1, 12, 0, -1, undefined];
 console.log(deleteInvalids(array1));
+
+//fouth assignment
