@@ -67,3 +67,36 @@ const array1 = [NaN, 1, 12, 0, -1, undefined];
 console.log(deleteInvalids(array1));
 
 //fouth assignment
+const testObject = {
+  name: "kolimuddin",
+  birthYear: 1990,
+  siteName: "google",
+};
+function password(obj) {
+  if (obj.birthYear.toString().length < 4 || obj.siteName == null) {
+    return "Invalid";
+  }
+  if (
+    obj.hasOwnProperty("siteName") == false ||
+    obj.hasOwnProperty("birthYear") == false ||
+    obj.hasOwnProperty("name") == false
+  ) {
+    return "invalid";
+  }
+
+  return (
+    obj.siteName[0].toUpperCase() +
+    obj.siteName.slice(1) +
+    "#" +
+    obj.name +
+    "@" +
+    obj.birthYear
+  );
+}
+
+const result = password(testObject);
+console.log(result);
+
+//fifth problem
+
+function monthlySavings() {}
